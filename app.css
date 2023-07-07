@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ffe8ce;
+  border: 10px solid #fafafa;
+}
+
+#header {
+  position: absolute;
+  top: 1.5%;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#noir {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  object-fit: fill;
+  left: 3%;
+  -webkit-filter: drop-shadow(3px 2px 2px #222);
+}
+
+#title  {
+  font-size: 45px;
+  font-family: "Caprasimo", sans-serif;
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  width: 20%;
+  text-align: center;
+  color: #900d0d;
+  -webkit-text-stroke: .2px #1b0f02;
+  left: 8%;
+}
+
+#navigation {
+  display: flex;
+  gap: 2vw;
+  overflow: hidden;
+  font-family: 'Baloo 2';
+}
+
+#search {
+  position: absolute;
+  width: 12%;
+  top: 28%;
+  right: 21%;
+  height: 38%;
+  border: none;
+  border-radius: 20px;
+  padding-left: 10px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
+}
+
+.bag {
+  position: absolute;
+  top: 20%;
+  font-size: 35px;
+  right: 16%;
+  transition-duration: .125s;
+}
+
+.bag:hover{
+  scale: 1.2;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0px;
+}
+
+.bag:hover #bag{
+  scale: 1.2;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0px;
+}
+
+#bag {
+  color: #ffe8ce;
+  -webkit-text-stroke: 2.4px rgb(0, 0, 0);
+  transition-duration: .125s;
+}
+
+.circle {
+  position: absolute;
+  top: 15%;
+  left: 75%;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 208, 0);
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.hero {
+  position: relative;
+  width: 60%;
+  height: 50%;
+  left: -8%;
+  display: flex;
+  
+}
+
+
+#featured {
+  font-family: "Baloo 2";
+  font-size: 70px;
+  text-shadow: 2px 2px;
+}
+
+#desc {
+  width: 30%;
+  font-family: 'Baloo 2';
+  opacity: 60%;
+}
+
+#price {
+  margin-top: 2%;
+  font-family: 'Baloo 2';
+  font-size: 30px;
+}
+
+#buy-btn {
+  font-size: 16px;
+  margin-top: 2.5em;
+  width: 20%;
+  height: 10%;
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+  color: #ffe8ce;
+  font-family: 'Caprasimo';
+  transition-duration: .125s;
+}
+#buy-btn:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.circle2 {
+  position: relative;
+  right: 5%;
+  margin: 2%;
+  width: 55%;
+  height: auto;
+  border-radius: 100%;
+  background-color: #dd8d5d;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    position: static;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
